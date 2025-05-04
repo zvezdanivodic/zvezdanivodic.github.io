@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zvezdani Vodič</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Crimson Pro', serif;
+      background-color: #1b1035;
+      color: #fff5e1;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: radial-gradient(ellipse at center, #3a1f78 0%, #1b1035 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 48px;
+      color: #e0c97f;
+    }
+    header p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      color: #e4ddca;
+    }
+    button {
+      padding: 12px 28px;
+      font-size: 18px;
+      background-color: #e0c97f;
+      color: #1b1035;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: #ffcf70;
+      text-shadow: 0 0 10px #000;
+      margin-bottom: 40px;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .service-box {
+      background: linear-gradient(145deg, #3a295f, #1b1035);
+      border-radius: 20px;
+      padding: 30px 20px;
+      border: 1px solid #8b5e3c;
+      box-shadow: 0 0 20px #8b5e3c66;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px #f7d77499;
+    }
+    .service-box h3 {
+      color: #ffd699;
+      margin-bottom: 10px;
+    }
+    .service-box p {
+      font-size: 16px;
+      color: #d9d2f0;
+      margin-bottom: 15px;
+    }
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #14082d;
+      color: #ccc;
+    }
+    @media (max-width: 768px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TI ZNAŠ.</h1>
+    <p>Ti znaš da ono što osećaš nije slučajno. Da nemir u grudima nije slabost – već poruka. Da čak i kad svi ćute – tvoje zvezde govore. I znaš… Da je sada vreme.</p>
+    <button onclick="location.href='#usluge'">Započni tumačenje</button>
+  </header>
+
+  <section id="usluge" class="section">
+    <h2>Usluge</h2>
+    <div class="service-grid">
+      <div class="service-box">
+        <h3>Natalna karta</h3>
+        <p>Mapa tvoje unutrašnje arhitekture. Tumačenje koje pomaže da razumeš sebe, svoje darove i izazove.<br>Cena: 20€</p>
+      </div>
+      <div class="service-box">
+        <h3>Uporedni horoskop</h3>
+        <p>Ljubavni uvid i energetska povezanost. Saznaj gde se vaše energije susreću – a gde razilaze.<br>Cena: 30€</p>
+      </div>
+      <div class="service-box">
+        <h3>Godišnji horoskop</h3>
+        <p>Pregled ličnih tranzita kroz godinu. Kada da gradiš, kada da pustiš.<br>Cena: 25€</p>
+      </div>
+      <div class="service-box">
+        <h3>Ljubavni trougao (Premium)</h3>
+        <p>Dubinska analiza odnosa između tri osobe. Diskretno. Empatično. Oslobađajuće.<br>Cena: 50€</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zvezdani Vodič. Sva prava zadržana.</p>
+  </footer>
+</body>
+</html>
